@@ -1,9 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {
-  addContact,
-  fetchContacts,
-  removeContact,
-} from 'redux/foneBoockOperators';
+import { logOut } from 'redux/auth/auth-operations';
+import { fetchContacts, addContact, removeContact } from './operations';
 
 const contactsSlice = createSlice({
   name: 'contacts',
@@ -40,13 +37,21 @@ const contactsSlice = createSlice({
     },
     [removeContact.fulfilled](state, action) {
       state.isLoading = false;
-      state.items = state.items.filter(item => item.id !== action.payload);
+      const index = state.items.findIndex(
+        contact => contact.id === action.payload.id
+      );
+      state.items.splice(index, 1);
     },
     [removeContact.rejected](state, action) {
       state.isLoading = false;
       state.error = action.payload;
     },
+    [logOut.fulfilled](state) {
+      state.items = [];
+      state.error = null;
+      state.isLoading = false;
+    },
   },
 });
 
-export default contactsSlice.reducer;
+export const contactsReducer = contactsSlice.reducer;
