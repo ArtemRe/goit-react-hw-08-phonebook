@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/auth-operations';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import Typography from '@mui/material/Typography';
 
 export default function LoginForm() {
   const dispatch = useDispatch();
@@ -35,9 +36,9 @@ export default function LoginForm() {
         <Avatar sx={{ m: 3, bgcolor: 'secondary.main', width: 60, height: 60 }}>
           <LocalPhoneIcon />
         </Avatar>
-        {/* <Typography component="h4" variant="h4">
-          Log in to Phonebook
-        </Typography> */}
+        <Typography component="h4" variant="h4">
+          Login to your account
+        </Typography>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 2 }}>
           <TextField
             margin="normal"
