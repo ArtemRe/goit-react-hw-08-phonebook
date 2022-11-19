@@ -20,15 +20,15 @@ export default function PhoneBookList({ items }) {
     return (
       <ListItem
         key={id}
-        sx={{ bgcolor: '#f1f3f9', mb: 2 }}
+        sx={{ bgcolor: '#bbdefb', mb: 2 }}
         secondaryAction={
-          <IconButton
+          <IconButton      
             edge="end"
             aria-label="delete"
-            type="submit"
+            type="submit"    
             onClick={() => onRemoveContact(id)}
           >
-            <DeleteIcon />
+            <DeleteIcon sx={{ color: "#1a237e" }} />
           </IconButton>
         }
       >

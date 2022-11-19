@@ -54,6 +54,7 @@ export default function ContactForm() {
           Add Contacts
         </Typography>
         <TextField
+          sx={{ bgcolor: '#bbdefb' }}
           margin="normal"
           required
           fullWidth
@@ -68,6 +69,7 @@ export default function ContactForm() {
           onChange={handelChange}
         />
         <TextField
+          sx={{ bgcolor: '#bbdefb' }}
           margin="normal"
           required
           fullWidth
@@ -93,3 +95,4 @@ export default function ContactForm() {
     </Box>
   );
 }
+// #bbdefb
