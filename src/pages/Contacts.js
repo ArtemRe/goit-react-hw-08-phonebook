@@ -38,7 +38,7 @@ export default function Contacts() {
         {error && <Alert severity="error">Oops, something went wrong</Alert>}
 
         <FormAddContacts />
-        {!isLoading && contacts.length > 0 && (
+        {!isLoading && contacts.length >= 0 && (
           <>
             <Typography
               component="div"

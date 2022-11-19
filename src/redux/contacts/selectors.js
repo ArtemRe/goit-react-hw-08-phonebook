@@ -19,4 +19,4 @@ export const getFilteredContacts = ({ contacts, filter }) => {
   return filteredContacts;
 };
 
-export const getLoadingStatus = state => state.contacts.loading;
+// export const getLoadingStatus = state => state.contacts.loading;
