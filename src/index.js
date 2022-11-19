@@ -7,7 +7,22 @@ import { store } from 'redux/store';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './index.css';
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '##6fbf73',
+      main: '#4caf50',
+      dark: '#357a38',
+      contrastText: '#000',
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

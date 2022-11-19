@@ -33,13 +33,13 @@ export default function LoginForm() {
           alignItems: 'center',
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: 'bloo' }}>
+        <Avatar sx={{ m: 3, bgcolor: 'secondary.main', width: 60, height: 60 }}>
           <LocalPhoneIcon />
         </Avatar>
-        <Typography component="h4" variant="h4">
+        {/* <Typography component="h4" variant="h4">
           Log in to Phonebook
-        </Typography>
-        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+        </Typography> */}
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 2 }}>
           <TextField
             margin="normal"
             required
@@ -64,7 +64,8 @@ export default function LoginForm() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 }}
+            // colore="darck"
+            sx={{ mt: 4, mb: 3, bgcolor: 'secondary.main' }}
           >
             Sign In
           </Button>

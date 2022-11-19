@@ -2,7 +2,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import BookOnlineOutlinedIcon from '@mui/icons-material/BookOnlineOutlined';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
@@ -35,11 +35,11 @@ export default function RegisterForm() {
           alignItems: 'center',
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-          <BookOnlineOutlinedIcon />
+        <Avatar sx={{ m: 1, bgcolor: 'secondary.main', width: 60, height: 60 }}>
+          <LocalPhoneIcon />
         </Avatar>
         <Typography component="h4" variant="h4">
-          Create your account
+          Create account
         </Typography>
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Grid container spacing={2}>
@@ -80,7 +80,7 @@ export default function RegisterForm() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 }}
+            sx={{ mt: 3, mb: 2, bgcolor: 'secondary.main' }}
           >
             Create account
           </Button>

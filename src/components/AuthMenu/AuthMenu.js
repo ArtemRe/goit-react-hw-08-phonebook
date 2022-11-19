@@ -1,6 +1,7 @@
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+// import { blueGrey } from '@mui/material/colors';
 
 export default function AuthMenu() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export default function AuthMenu() {
         }}
         variant="button"
         color="text.primary"
-        sx={{ my: 1, mx: 1.5 }}
+        sx={{ my: 1, mx: 1.5, bgcolor: 'secondary.main' }}
       >
         Sign Up
       </Button>
@@ -22,7 +23,7 @@ export default function AuthMenu() {
           navigate('/login');
         }}
         variant="outlined"
-        sx={{ my: 1, mx: 1.5 }}
+        sx={{ my: 1, mx: 1.5, bgcolor: 'secondary.main' }}
       >
         Log in
       </Button>

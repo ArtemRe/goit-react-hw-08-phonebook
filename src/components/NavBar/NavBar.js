@@ -16,7 +16,7 @@ export default function NavBar() {
       elevation={0}
       sx={{ borderBottom: theme => `1px solid ${theme.palette.divider}` }}
     >
-      <Toolbar sx={{ flexWrap: 'wrap' }}>
+      <Toolbar sx={{ flexWrap: 'wrap', bgcolor: '#00bfa5' }}>
         <Typography variant="h4" color="inherit" noWrap sx={{ flexGrow: 1 }}>
           PhoneBook
         </Typography>
