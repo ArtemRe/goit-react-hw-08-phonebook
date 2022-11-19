@@ -64,7 +64,6 @@ export default function LoginForm() {
             type="submit"
             fullWidth
             variant="contained"
-            // colore="darck"
             sx={{ mt: 4, mb: 3, bgcolor: 'primary.main' }}
           >
             Sign In
