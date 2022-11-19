@@ -12,9 +12,8 @@ export default function AuthMenu() {
         onClick={() => {
           navigate('/register');
         }}
-        variant="button"
-        color="text.primary"
-        sx={{ my: 1, mx: 1.5, bgcolor: 'secondary.main' }}
+        variant="outlined"
+        sx={{ my: 1, mx: 1.5, bgcolor: 'primary.main', color: 'white' }}
       >
         Sign Up
       </Button>
@@ -23,7 +22,7 @@ export default function AuthMenu() {
           navigate('/login');
         }}
         variant="outlined"
-        sx={{ my: 1, mx: 1.5, bgcolor: 'secondary.main' }}
+        sx={{ my: 1, mx: 1.5, bgcolor: 'primary.main', color: 'white' }}
       >
         Log in
       </Button>

@@ -65,7 +65,7 @@ export default function LoginForm() {
             fullWidth
             variant="contained"
             // colore="darck"
-            sx={{ mt: 4, mb: 3, bgcolor: 'secondary.main' }}
+            sx={{ mt: 4, mb: 3, bgcolor: 'primary.main' }}
           >
             Sign In
           </Button>

@@ -50,7 +50,7 @@ export default function ContactForm() {
       }}
     >
       <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-        <Typography component="div" variant="h5" sx={{ textAlign: 'center' }}>
+        <Typography component="div" variant="h4" sx={{ textAlign: 'center' }}>
           Add Contacts
         </Typography>
         <TextField
@@ -64,7 +64,7 @@ export default function ContactForm() {
           autoFocus
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          //helperText="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+         
           onChange={handelChange}
         />
         <TextField
@@ -79,7 +79,7 @@ export default function ContactForm() {
           name="number"
           autoComplete="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          //helperText="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          
         />
         <Button
           type="submit"

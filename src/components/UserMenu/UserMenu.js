@@ -21,18 +21,18 @@ export default function UserMenu() {
         }}
         variant="button"
         color="text.primary"
-        sx={{ my: 1, mx: 1.5 }}
+        sx={{ my: 1, mx: 1.5, color: 'white' }}
       >
         Contacts
       </Button>
       <Avatar>{user.name[0]}</Avatar>
-      <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
+      <Typography variant="h5" color="inherit" noWrap sx={{ flexGrow: 1 }}>
         {user.name}
       </Typography>
       <Button
         onClick={() => dispatch(logOut())}
         variant="outlined"
-        sx={{ my: 1, mx: 1.5 }}
+        sx={{ my: 1, mx: 1.5, color: 'white' }}
       >
         Log Out
       </Button>

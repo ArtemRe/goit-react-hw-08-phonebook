@@ -80,7 +80,7 @@ export default function RegisterForm() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, bgcolor: 'secondary.main' }}
+            sx={{ mt: 3, mb: 2, bgcolor: 'primary.main' }}
           >
             Create account
           </Button>
