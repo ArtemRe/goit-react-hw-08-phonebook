@@ -25,7 +25,7 @@ export default function UserMenu() {
       >
         Contacts
       </Button>
-      <Avatar>{user.name[0]}</Avatar>
+      <Avatar sx={{ bgcolor: '#3d5afe' }}>{user.name[0]}</Avatar>
       <Typography variant="h5" color="inherit" noWrap sx={{ flexGrow: 1 }}>
         {user.name}
       </Typography>

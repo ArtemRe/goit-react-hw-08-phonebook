@@ -1,7 +1,6 @@
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-// import { blueGrey } from '@mui/material/colors';
 
 export default function AuthMenu() {
   const navigate = useNavigate();
